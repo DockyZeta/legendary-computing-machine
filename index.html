@@ -1,14 +1,73 @@
 <!DOCTYPE html>
 <html>
 <head>
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </script>
 <title>nothing</title>
 </head>
 
 
 <body>
-The content of the document......
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="card">
+                    <div class="card-header"><h2 class="text-center">Input based on select</h2></div>
+                    <div class="card-body"><p class="lead text-center">Example of a select form with an input appearing
+                        based on the selection.</p>
+                        <p class="text-center">Change the select input below to see the changes</p>
+                        <form id="submit-form" method="post" action="" role="form">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group"><label for="player_type">Find players by:</label> <select
+                                            id="player_type" name="player_type" class="form-control">
+                                        <option value="team">Team</option>
+                                        <option value="experience">Experience</option>
+                                        <option value="age">Age</option>
+                                        <option value="surname">Surname beginning with:</option>
+                                        <option value="all" selected>All</option>
+                                    </select></div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <div id="experiance"><select id="exp" name="exp" class="form-control">
+                                            <option value="1">1 Year</option>
+                                            <option value="2">2-3 Years</option>
+                                            <option value="3">3-5 Years</option>
+                                            <option value="4">6+ Years</option>
+                                        </select></div>
+                                        <div id="teams"><select id="team" name="team" class="form-control">
+                                            <option value="1">Rangers</option>
+                                            <option value="2">Blazers</option>
+                                            <option value="3">Mystics</option>
+                                            <option value="4">United</option>
+                                            <option value="5">Power</option>
+                                            <option value="6">Kings</option>
+                                        </select></div>
+                                        <div id="ages"><select id="age" name="age" class="form-control">
+                                            <option value="1">18-20</option>
+                                            <option value="2">20-25</option>
+                                            <option value="3">25-28</option>
+                                            <option value="4">28+</option>
+                                        </select></div>
+                                        <div id="surname"><input type='text' class='form-control' id='surname_input'
+                                                                 maxlength='1' minlength='1' value='H'></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 text-center"><input type="submit" class="btn btn-success btn-send"
+                                                                       value="Search"></div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>   
+    
 </body>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </html>
